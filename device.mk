@@ -65,8 +65,7 @@ PRODUCT_PACKAGES += \
 
 # packages for init.rc
 PRODUCT_PACKAGES += \
-    resize2fs \
-    e2fsck
+    resize2fs
 
 # permissions
 PRODUCT_COPY_FILES += \
@@ -77,6 +76,9 @@ $(call inherit-product-if-exists, vendor/hisense/eg909/eg909-vendor-blobs.mk)
 
 # gps.conf
 $(call inherit-product, device/common/gps/gps_as_supl.mk)
+
+# cm9 gsm config
+$(call inherit-product, vendor/my4ndr0id/config/gsm.mk)
 
 # gapps
 #$(call inherit-product-if-exists, vendor/gapps/gapps-vendor-blobs.mk)

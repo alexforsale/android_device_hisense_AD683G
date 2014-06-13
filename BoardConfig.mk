@@ -50,7 +50,7 @@ BOARD_KERNEL_BASE    := 0x00e3b004
 
 TARGET_PREBUILT_KERNEL := device/hisense/eg909/kernel
 # modify Android.mk in system/core/charger and system/core/init to use these
-TARGET_PREBUILT_INIT := vendor/hisense/eg909/proprietary/init
+#TARGET_PREBUILT_INIT := vendor/hisense/eg909/proprietary/init
 TARGET_PREBUILT_CHARGER := vendor/hisense/eg909/proprietary/charger
 
 # webkit

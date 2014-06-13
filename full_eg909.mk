@@ -14,7 +14,5 @@
 # limitations under the License.
 #
 
-# msm7627a
-$(call inherit-product, device/qcom/msm7627a/msm7627a.mk)
 # Inherit device configuration
 $(call inherit-product, device/hisense/eg909/device.mk)

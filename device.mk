@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# msm7627a
+$(call inherit-product, device/qcom/msm7627a/msm7627a.mk)
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/hisense/eg909/kernel
 else
@@ -50,10 +53,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
     ro.debuggable=1 \
     ro.allow.mock.location=0
-
-# for DSP presets
-PRODUCT_PROPERTY_OVERRIDES += \
-    lpa.decode=false
 
 # setupwizard
 PRODUCT_PROPERTY_OVERRIDES += \

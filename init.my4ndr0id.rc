@@ -55,6 +55,9 @@ on boot
     chown root system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
     chmod 0664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
+# Run sysinit
+    exec /system/bin/sysinit
+
 ## Permissions to allow system-wide tracing to the kernel trace buffer.
 
 # Allow writing to the kernel trace log.
